@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { User, MoodEntry, JournalEntry, MeditationSession } from "@/entities/all";
+import { User, MoodEntry, JournalEntry, MeditationSession } from "@/Entities/all";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { 

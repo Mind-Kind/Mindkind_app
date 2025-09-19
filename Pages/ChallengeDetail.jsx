@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { useLocation, Link } from "react-router-dom";
-import { Challenge } from "@/entities/all";
+import { Challenge } from "@/Entities/all";
 import { getChallengeTemplate } from "@/Components/challenges/challengeData";
 import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
 import { Button } from "@/Components/ui/button";

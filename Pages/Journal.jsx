@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { JournalEntry, User } from "@/entities/all";
+import { JournalEntry, User } from "@/Entities/all";
 import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
 import { Button } from "@/Components/ui/button";
 import { Input } from "@/Components/ui/input";
