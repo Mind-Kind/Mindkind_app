@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Badge } from "@/Components/ui/badge";
+import { Input } from "@/Components/ui/input";
 import { 
   Headphones, Play, Search, Filter, Clock, 
   Heart, Sparkles, Users, Star, Pause 
 } from "lucide-react";
-import { AUDIO_LIBRARY, MOOD_CATEGORIES, GOAL_CATEGORIES } from "@/components/audio/audioData";
+import { AUDIO_LIBRARY, MOOD_CATEGORIES, GOAL_CATEGORIES } from "@/Components/audio/audioData";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAudioPlayer } from "@/components/audio/AudioPlayerContext";
+import { useAudioPlayer } from "@/Components/audio/AudioPlayerContext";
 
 export default function AudioLibraryPage() {
   const [audioTracks, setAudioTracks] = useState(AUDIO_LIBRARY);

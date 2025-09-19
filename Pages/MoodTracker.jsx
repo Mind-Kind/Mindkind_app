@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { MoodEntry, User } from "@/entities/all";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Input } from "@/Components/ui/input";
+import { Textarea } from "@/Components/ui/textarea";
+import { Badge } from "@/Components/ui/badge";
 import { Heart, Calendar, TrendingUp, Tag } from "lucide-react";
 import { format, isToday, subDays } from "date-fns";
 import { motion, AnimatePresence } from "framer-motion";

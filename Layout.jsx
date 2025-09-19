@@ -18,9 +18,9 @@ import {
   SidebarFooter,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { AudioPlayerProvider } from "@/components/audio/AudioPlayerContext";
-import AudioPlayer from "@/components/audio/AudioPlayer";
+} from "@/Components/ui/sidebar";
+import { AudioPlayerProvider } from "@/Components/audio/AudioPlayerContext";
+import AudioPlayer from "@/Components/audio/AudioPlayer";
 
 const navigationItems = [
   {

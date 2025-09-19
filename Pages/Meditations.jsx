@@ -1,17 +1,17 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { MeditationSession, User } from "@/entities/all";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Badge } from "@/Components/ui/badge";
+import { Input } from "@/Components/ui/input";
 import { 
   Sparkles, Play, Clock, Search, Filter, 
   Heart, Users, Moon, Zap, Pause, CheckCircle
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAudioPlayer } from "@/components/audio/AudioPlayerContext";
-import { MEDITATION_LIBRARY } from "@/components/meditations/meditationData";
+import { useAudioPlayer } from "@/Components/audio/AudioPlayerContext";
+import { MEDITATION_LIBRARY } from "@/Components/meditations/meditationData";
 import { format } from "date-fns";
 
 export default function MeditationsPage() {

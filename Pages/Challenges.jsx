@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Challenge, User } from "@/entities/all";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Badge } from "@/Components/ui/badge";
 import { Trophy, Zap, Star, Sparkles } from "lucide-react";
-import { getAvailableChallenges, getChallengeTemplate } from "@/components/challenges/challengeData";
+import { getAvailableChallenges, getChallengeTemplate } from "@/Components/challenges/challengeData";
 import { format } from "date-fns";
 
 export default function ChallengesPage() {

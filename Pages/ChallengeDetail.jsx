@@ -2,14 +2,14 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Challenge } from "@/entities/all";
-import { getChallengeTemplate } from "@/components/challenges/challengeData";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { getChallengeTemplate } from "@/Components/challenges/challengeData";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Badge } from "@/Components/ui/badge";
 import { ArrowLeft, CheckCircle, Zap, BookOpen, Repeat, Star } from "lucide-react";
 import { createPageUrl } from "@/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { Confetti } from "@/components/ui/confetti";
+import { Confetti } from "@/Components/ui/confetti";
 
 export default function ChallengeDetailPage() {
   const location = useLocation();
