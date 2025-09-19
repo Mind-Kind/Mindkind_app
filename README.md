@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MindKind - Your Mental Wellness Sanctuary
 
 A beautiful, modern React application for mental wellness tracking, meditation, journaling, and personal growth challenges.
@@ -121,3 +122,7 @@ This project is licensed under the MIT License.
 ---
 
 **MindKind** - Nurturing your mental wellness journey, one day at a time. 💜
+=======
+# Mindkind_app
+SIH test
+>>>>>>> bb94238a422b31135875c3f61bdd4d1d0bcbd3c2
