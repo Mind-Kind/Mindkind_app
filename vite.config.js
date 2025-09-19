@@ -13,5 +13,15 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
+  },
+  preview: {
+    host: true,
+    port: process.env.PORT || 3000,
+    allowedHosts: [
+      'mindkind-app-4.onrender.com',
+      'mindkind-app.onrender.com',
+      'localhost',
+      '127.0.0.1'
+    ]
   }
 })
