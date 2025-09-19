@@ -1,0 +1,72 @@
+{
+    "name": "Challenge",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Challenge name"
+      },
+      "description": {
+        "type": "string",
+        "description": "Challenge description"
+      },
+      "duration_days": {
+        "type": "number",
+        "description": "Challenge duration in days"
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "self-love",
+          "anxiety",
+          "healing",
+          "mindfulness",
+          "confidence",
+          "relationships"
+        ],
+        "description": "Challenge category"
+      },
+      "challenge_template_id": {
+        "type": "string",
+        "description": "ID for the challenge template"
+      },
+      "image_url": {
+        "type": "string",
+        "description": "Cover image for the challenge"
+      },
+      "current_day": {
+        "type": "number",
+        "default": 1,
+        "description": "Current day in challenge"
+      },
+      "completed_days": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "description": "Array of completed day numbers"
+      },
+      "started_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date challenge was started"
+      },
+      "is_active": {
+        "type": "boolean",
+        "default": true,
+        "description": "Whether challenge is currently active"
+      },
+      "is_completed": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether the challenge is fully completed"
+      }
+    },
+    "required": [
+      "name",
+      "duration_days",
+      "category",
+      "started_date",
+      "challenge_template_id"
+    ]
+  }

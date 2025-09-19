@@ -1,0 +1,71 @@
+{
+    "name": "AudioTrack",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Title of the audio track"
+      },
+      "description": {
+        "type": "string",
+        "description": "Description of what the track contains"
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "affirmations",
+          "healing",
+          "self-love",
+          "sleep",
+          "meditation",
+          "breathing"
+        ],
+        "description": "Category of the audio track"
+      },
+      "mood_tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Moods this track helps with"
+      },
+      "goal_tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Goals this track supports"
+      },
+      "duration_minutes": {
+        "type": "number",
+        "description": "Duration in minutes"
+      },
+      "audio_url": {
+        "type": "string",
+        "description": "URL to the audio file"
+      },
+      "cover_image": {
+        "type": "string",
+        "description": "Cover image URL"
+      },
+      "narrator": {
+        "type": "string",
+        "description": "Name of the narrator/voice"
+      },
+      "difficulty_level": {
+        "type": "string",
+        "enum": [
+          "beginner",
+          "intermediate",
+          "advanced"
+        ],
+        "default": "beginner",
+        "description": "Difficulty level"
+      }
+    },
+    "required": [
+      "title",
+      "category",
+      "duration_minutes"
+    ]
+  }

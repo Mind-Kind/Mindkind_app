@@ -1,0 +1,54 @@
+{
+    "name": "MoodEntry",
+    "type": "object",
+    "properties": {
+      "mood_emoji": {
+        "type": "string",
+        "description": "Emoji representing the mood"
+      },
+      "mood_name": {
+        "type": "string",
+        "enum": [
+          "joyful",
+          "grateful",
+          "calm",
+          "anxious",
+          "sad",
+          "frustrated",
+          "excited",
+          "peaceful",
+          "overwhelmed",
+          "content"
+        ],
+        "description": "Named emotion"
+      },
+      "intensity": {
+        "type": "number",
+        "minimum": 1,
+        "maximum": 5,
+        "description": "Mood intensity from 1-5"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Associated tags like work, relationships, health"
+      },
+      "notes": {
+        "type": "string",
+        "description": "Optional notes about the mood"
+      },
+      "date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date of the mood entry"
+      }
+    },
+    "required": [
+      "mood_emoji",
+      "mood_name",
+      "intensity",
+      "date"
+    ]
+  }

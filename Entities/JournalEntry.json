@@ -1,0 +1,47 @@
+{
+    "name": "JournalEntry",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Journal entry title"
+      },
+      "content": {
+        "type": "string",
+        "description": "Journal entry content"
+      },
+      "prompt": {
+        "type": "string",
+        "description": "Writing prompt used"
+      },
+      "mood_before": {
+        "type": "string",
+        "description": "Mood emoji before journaling"
+      },
+      "mood_after": {
+        "type": "string",
+        "description": "Mood emoji after journaling"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Associated tags"
+      },
+      "is_private": {
+        "type": "boolean",
+        "default": true,
+        "description": "Privacy setting for the entry"
+      },
+      "date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date of the journal entry"
+      }
+    },
+    "required": [
+      "content",
+      "date"
+    ]
+  }

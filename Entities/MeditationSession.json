@@ -1,0 +1,50 @@
+{
+    "name": "MeditationSession",
+    "type": "object",
+    "properties": {
+      "session_type": {
+        "type": "string",
+        "enum": [
+          "breathing",
+          "mindfulness",
+          "sleep",
+          "anxiety",
+          "focus",
+          "self-love",
+          "healing"
+        ],
+        "description": "Type of meditation session"
+      },
+      "duration_minutes": {
+        "type": "number",
+        "description": "Session duration in minutes"
+      },
+      "completed": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether session was completed"
+      },
+      "mood_before": {
+        "type": "string",
+        "description": "Mood emoji before session"
+      },
+      "mood_after": {
+        "type": "string",
+        "description": "Mood emoji after session"
+      },
+      "notes": {
+        "type": "string",
+        "description": "Optional reflection notes"
+      },
+      "date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date of the session"
+      }
+    },
+    "required": [
+      "session_type",
+      "duration_minutes",
+      "date"
+    ]
+  }
